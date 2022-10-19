@@ -37,7 +37,7 @@ export async function run(
   const opts = {
     commandParams,
     cwd: options.cwd ?? process.cwd(),
-    antdDir: join(process.cwd(), 'node_modules/antd'),
+    antdDir: join(process.cwd(), 'node_modules/antd-design-vue'),
     joinFullPathByAntdDir: (...paths: string[]) => join(opts.antdDir, ...paths),
     antdModuleTypes: moduleTypes,
   };
